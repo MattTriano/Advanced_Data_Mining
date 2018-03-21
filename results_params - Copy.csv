@@ -1,0 +1,16 @@
+﻿Base Classifier,Feature Eng.,Scaling,Balancing,Best Params,Train Recall,Train Precision,Train Acc,Test Recall,Test Precision,Test Acc
+Logistic,Raw,None,None,"Solver: liblinear, C: 0.01, Penalty: L1",0.2336,0.7169,0.8101,0.2306,0.7094,0.809
+Logistic,Raw,SMOTE,None,"Solver: Newton-CG, C: 1, Penalty: L2",0.6612,0.7108,0.6961,0.6577,0.7085,0.6936
+Logistic,Raw,SMOTE,StdScaler,"Solver: Saga, C: 0.001, Penalty: L1 ",0.6005,0.8024,0.7263,0.5979,0.8025,0.7254
+KNN,Raw,None,None,"Weight: Uniform, NNeighbors: 5, Dim: 1",0.3398,0.6754,0.8179,0.1871,0.3819,0.7533
+KNN,Raw,SMOTE,None,"Weight: Distance, NNeighbors: 3, Dim: 2",0.9994,1,0.9997,0.4953,0.594,0.5784
+KNN,Raw,SMOTE,StdScaler,"Weight: Uniform, NNeighbors: 3, Dim: 1",0.9582,0.9141,0.9341,0.595,0.7705,0.7089
+Random Forest,Raw,None,None,"Entropy, MaxDepth: 10, N_estimators: 50, Max_Feats: 23",0.4558,0.8154,0.8568,0.359,0.6716,0.8194
+Random Forest,Raw,SMOTE,None,"Gini, MaxDepth: 30, N_estimators: 10, Max_Feats: 10",0.9992,0.9997,0.9994,0.7949,0.9188,0.8623
+Random Forest,Raw,SMOTE,StdScaler,"Gini, MaxDepth: 30,  N_estimators: 50, Max_Feats: 10",0.9992,0.9997,0.9995,0.7947,0.919,0.8623
+Bagged Dtrees,Raw,None,None,"Entropy, MaxDepth: 45, Min Samples to Split: 6, N_estimators: 100, Max_Samples: 25%",0.4777,0.822,0.8616,0.3712,0.6632,0.8193
+Bagged Dtrees,Raw,SMOTE,None,"Gini, MaxDepth: 30, Min Samples to Split: 2, N_estimators: 100, Max_Samples: 25%",0.8829,0.9628,0.9244,0.7937,0.9155,0.8602
+Bagged Dtrees,Raw,SMOTE,StdScaler,"Entropy, MaxDepth: 45, Min Samples to Split: 6, N_estimators: 100, Max_Samples: 25%",0.8835,0.9626,0.9246,0.7952,0.916,0.8611
+AdaBoost,Raw,None,None,"Learning Rate: 0.9, N_Estimators: 100",0.3501,0.6874,0.821,0.3426,0.6728,0.8177
+AdaBoost,Raw,SMOTE,None,"Learning Rate: 0.9, N_Estimators: 100",0.8005,0.9298,0.87,0.8006,0.9274,0.8689
+AdaBoost,Raw,SMOTE,StdScaler,"Learning Rate: 0.9, N_Estimators: 100",0.8005,0.9298,0.87,0.8006,0.9274,0.8689
