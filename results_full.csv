@@ -1,4 +1,4 @@
-﻿Base Classifier,Feature Eng.,Scaling,Balancing,Best Params,Train Recall,Train Precision,Train Acc,Test Recall,Test Precision,Test Acc
+Base Classifier,Feature Eng.,Scaling,Balancing,Best Params,Train Recall,Train Precision,Train Acc,Test Recall,Test Precision,Test Acc
 Logistic,Raw,None,None,"Solver: liblinear, C: 0.01, Penalty: L1",0.2336,0.7169,0.8101,0.2306,0.7094,0.809
 Logistic,Raw,SMOTE,None,"Solver: Newton-CG, C: 1, Penalty: L2",0.6612,0.7108,0.6961,0.6577,0.7085,0.6936
 Logistic,Raw,SMOTE,StdScaler,"Solver: Saga, C: 0.001, Penalty: L1 ",0.6005,0.8024,0.7263,0.5979,0.8025,0.7254
